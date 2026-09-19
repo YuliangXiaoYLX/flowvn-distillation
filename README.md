@@ -4,19 +4,28 @@
 
 CMRx4DFlow 2026 · MICCAI workshop
 
-[Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
+[Overview](#method-overview) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
 
 This code trains an eight-stage FlowVN student from a frozen sixteen-stage
 teacher. Student stages align with pairs of teacher stages, using supervision
 on the final reconstruction, intermediate reconstructions, and stage updates.
 The teacher is used during training only.
 
-The matched supervised baseline starts from the same teacher weights. The four
-recipes below separate teacher initialization from the contribution of each
-distillation loss.
+## Method overview
 
-This repository contains the code and citation metadata. The accepted
-manuscript, paper figures, challenge data, and trained weights are not included.
+[![Poster overview of stage-aligned distillation: a frozen S16 teacher supervises an S8 student through final-output, trajectory, and two-stage-update matching. Teacher losses are active in epochs 1–5; ground-truth supervision continues through epoch 10. Only S8 runs at inference.](assets/method-overview.png)](assets/method-overview.png)
+
+*Poster schematic of S16-to-S8 distillation. The distilled student and matched
+supervised control both copy teacher stages 2, 4, ..., 16 for initialization.
+Click the figure to view it at full resolution.*
+
+The k-space illustration is schematic. The implementation uses Cartesian
+k–t Gaussian masks; both networks also use measured k-space and coil
+sensitivities for data consistency. The four training recipes below separate
+teacher initialization from the contribution of each distillation loss.
+
+This repository contains code, citation metadata, and the poster overview.
+The accepted manuscript, challenge data, and trained weights are not included.
 
 ## Installation
 
