@@ -1,6 +1,6 @@
 # Checkpoints
 
-Weights are not distributed with this release candidate. Training requires an
+Weights are not distributed with this code release. Training requires an
 authorized S16 teacher checkpoint; inference requires an authorized checkpoint
 of the configured depth. Contact the authors about availability after release
 permissions are resolved. No download URL is implied by a filename below.

@@ -24,8 +24,8 @@ supports the Apple Silicon CPU checks. Linux retains SciPy 1.15.3.
 Training used a 24 GB NVIDIA MIG allocation. Full-volume validation used a
 48 GB allocation. Complete-case timing used an RTX 3090. Memory needs depend
 on coil count and volume shape; first try a small authorized sample on your
-hardware. This release preparation runs CPU checks only, with no retraining
-or new CUDA performance claims.
+hardware. The release was checked with CPU tests and synthetic inputs. It has
+not been used to rerun training or establish new CUDA performance results.
 
 ## Matched training
 

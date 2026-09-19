@@ -4,7 +4,7 @@
 
 CMRx4DFlow 2026 · MICCAI workshop
 
-[Paper](https://openreview.net/forum?id=ZmT3bhaD1w) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md)
+[Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
 
 This code trains an eight-stage FlowVN student from a frozen sixteen-stage
 teacher. Student stages align with pairs of teacher stages, using supervision
@@ -15,13 +15,20 @@ The matched supervised baseline starts from the same teacher weights. The four
 recipes below separate teacher initialization from the contribution of each
 distillation loss.
 
-> Local release candidate. Public release is pending third-party license
-> clarification. Data, trained weights, and paper figures are not bundled.
+This repository contains the code and citation metadata. The accepted
+manuscript, paper figures, challenge data, and trained weights are not included.
 
 ## Installation
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/). For Linux
-CUDA training, select the Python version used for the paper:
+Clone the repository and install
+[uv](https://docs.astral.sh/uv/getting-started/installation/):
+
+```bash
+git clone https://github.com/YuliangXiaoYLX/flowvn-distillation.git
+cd flowvn-distillation
+```
+
+For Linux CUDA training, select the Python version used for the paper:
 
 ```bash
 export UV_PYTHON=3.10.20
@@ -129,5 +136,7 @@ Proceedings metadata will be added when available. Machine-readable citation:
 
 This project builds on FlowVN, the organizer's reconstruction demo, and the
 implementations credited in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-The inherited MIT license does not supersede the separate terms of every
-dependency. Redistribution status is recorded in [LICENSE](LICENSE).
+The project's own code is provided under the [MIT license](LICENSE).
+Third-party components retain their upstream terms, including the noncommercial
+terms stated for PCMRI-MSAC. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+for file-level attribution and license scope.

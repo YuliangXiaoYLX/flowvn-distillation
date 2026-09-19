@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the paper if you use this implementation."
 type: software
 title: "FlowVN Distillation"
+repository-code: "https://github.com/YuliangXiaoYLX/flowvn-distillation"
 authors:
   - family-names: Xiao
     given-names: Yuliang
