@@ -13,18 +13,20 @@ The teacher is used during training only.
 
 ## Method overview
 
-[![Poster overview of stage-aligned distillation: a frozen S16 teacher supervises an S8 student through final-output, trajectory, and two-stage-update matching. Teacher losses are active in epochs 1–5; ground-truth supervision continues through epoch 10. Only S8 runs at inference.](assets/method-overview.png)](assets/method-overview.png)
+[![Method overview: a frozen sixteen-stage FlowVN teacher trains an eight-stage student through stage-aligned distillation. Only the student runs at inference.](assets/method-overview.png)](assets/method-overview.png)
 
-*Poster schematic of S16-to-S8 distillation. The distilled student and matched
+*S16-to-S8 distillation. The distilled student and matched
 supervised control both copy teacher stages 2, 4, ..., 16 for initialization.
-Click the figure to view it at full resolution.*
+Input tiles are schematic illustrations. Click the figure to enlarge it.*
 
-The k-space illustration is schematic. The implementation uses Cartesian
-k–t Gaussian masks; both networks also use measured k-space and coil
-sensitivities for data consistency. The four training recipes below separate
-teacher initialization from the contribution of each distillation loss.
+[Editable diagram](assets/method-overview.drawio)
 
-This repository contains code, citation metadata, and the poster overview.
+The implementation uses Cartesian k–t Gaussian masks. Both networks also
+use measured k-space and coil sensitivities for data consistency. The four
+training recipes below separate teacher initialization from the contribution
+of each distillation loss.
+
+This repository contains code, citation metadata, and the method overview.
 The accepted manuscript, challenge data, and trained weights are not included.
 
 ## Installation
