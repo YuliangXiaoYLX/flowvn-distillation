@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite the paper if you use this implementation."
+type: software
+title: "FlowVN Distillation"
+authors:
+  - family-names: Xiao
+    given-names: Yuliang
+  - family-names: Anvari Hamedani
+    given-names: Kian
+  - family-names: Vavasour
+    given-names: Zach
+  - family-names: Graham
+    given-names: Simon J.
+  - family-names: Chiew
+    given-names: Mark
+preferred-citation:
+  type: conference-paper
+  title: "Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction"
+  authors:
+    - family-names: Xiao
+      given-names: Yuliang
+    - family-names: Anvari Hamedani
+      given-names: Kian
+    - family-names: Vavasour
+      given-names: Zach
+    - family-names: Graham
+      given-names: Simon J.
+    - family-names: Chiew
+      given-names: Mark
+  collection-title: "CMRx4DFlow 2026 Workshop"
+  year: 2026
+  url: "https://openreview.net/forum?id=ZmT3bhaD1w"

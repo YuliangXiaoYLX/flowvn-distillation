@@ -1,0 +1,27 @@
+name: CPU checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.12.3"
+          enable-cache: true
+      - run: uv sync --locked --extra cpu
+      - run: uv run --locked --extra cpu python -m unittest discover -s tests
+      - name: Synthetic reconstruction
+        run: >-
+          uv run --locked --extra cpu python scripts/benchmark_flowvn.py
+          --device cpu --num-stages 2 --features-out 2 --kernel-size 3
+          --depth 3 --time-frames 3 --spatial-size 8 --coils 2
+          --num-warmup 1 --num-iters 2

@@ -1,0 +1,17 @@
+License status of this local release candidate
+=============================================
+
+The license for the authors' original contributions has not yet been selected.
+This file does not grant a new license or relicense third-party material.
+Public redistribution is pending the permissions described in
+THIRD_PARTY_NOTICES.md.
+
+The inherited FlowMRI-Net / organizer FlowVN MIT notice is preserved in
+licenses/FlowMRI-Net-MIT.txt. Other applicable upstream notices are preserved
+in licenses/. These notices apply to their respective components; they do not
+establish a blanket MIT license for this entire candidate.
+
+The phase-correction module has separately stated noncommercial terms, and the
+organizer's shared utility files require clarification of redistribution rights.
+Paper publication rights, challenge data access, and checkpoint redistribution
+are separate from software licensing.

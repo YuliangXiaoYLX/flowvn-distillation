@@ -1,0 +1,75 @@
+# Matched S16-initialized S8 recipe; see docs/reproduction.md.
+train_split_json: data/splits/train.json
+val_split_json: data/splits/val.json
+split_base_dir: data/TrainSet/Aorta
+
+mode: train
+loss: supervised
+network: FlowVN
+features_in: 1
+features_out: 24
+kernel_size: 5
+num_act_weights: 71
+act: linear_flowvn
+D_size: 5
+T_size: 15
+num_stages: 8
+exp_loss: false
+
+distill_enabled: true
+teacher_ckpt_path: checkpoints/s16_teacher.ckpt
+teacher_num_stages: 16
+teacher_initialize_student: true
+distill_gt_weight: 1.0
+distill_teacher_weight: 0.25
+distill_kspace_weight: 0.0
+distill_trajectory_weight: 0.25
+distill_update_weight: 0.0
+distill_kspace_region: unacquired
+distill_normalize_teacher_losses: true
+distill_normalization_epsilon: 1.0e-6
+distill_teacher_schedule: warmup_cosine
+distill_teacher_warmup_epochs: 1
+distill_teacher_active_epochs: 5
+distill_teacher_final_scale: 0.2
+distill_teacher_precision: fp32
+
+epoch: 10
+lr: 1.0e-4
+batch_size: 1
+seed: 12345
+devices: [0]
+train_sample_limit: -1
+fit_with_validation: false
+num_workers: 4
+val_num_workers: 0
+dataloader_persistent_workers: true
+dataloader_prefetch_factor: 2
+
+grad_check: true
+flowvn_grad_checkpoint_policy: all
+compile_model: false
+compile_flowvn_activations: true
+compile_flowvn_regularizer: true
+compile_mode: default
+allow_tf32: true
+cudnn_benchmark: true
+deterministic_algorithms: false
+torchdynamo_disable_lru_cache: true
+precision_mode: fp32
+
+train_metric_interval: 0
+param_grad_log_every_n_steps: 0
+log_images_every_n_steps: 0
+checkpoint_every_n_epochs: 1
+checkpoint_save_last: true
+checkpoint_save_weights_only: false
+
+use_wandb: false
+wandb_project: flowvn-distillation
+wandb_entity: null
+wandb_mode: offline
+
+required_mask_backend: challenge
+usrate: [10, 20, 30, 40, 50]
+save_dir: outputs/s8_trajectory/seed12345
