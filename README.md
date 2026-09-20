@@ -134,7 +134,7 @@ tests/                          Synthetic behavior and command checks
 @inproceedings{xiao2026stagealigned,
   title = {Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction},
   author = {Xiao, Yuliang and Anvari Hamedani, Kian and Vavasour, Zach and Graham, Simon J. and Chiew, Mark},
-  booktitle = {CMRx4DFlow 2026 Workshop},
+  booktitle = {MICCAI CMRx4DFlow 2026 Workshop},
   year = {2026},
   url = {https://openreview.net/forum?id=ZmT3bhaD1w}
 }
