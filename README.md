@@ -19,8 +19,6 @@ The teacher is used during training only.
 supervised control both copy teacher stages 2, 4, ..., 16 for initialization.
 Input tiles are schematic illustrations. Click the figure to enlarge it.*
 
-[Editable diagram](assets/method-overview.drawio)
-
 The implementation uses Cartesian k–t Gaussian masks. Both networks also
 use measured k-space and coil sensitivities for data consistency. The four
 training recipes below separate teacher initialization from the contribution
