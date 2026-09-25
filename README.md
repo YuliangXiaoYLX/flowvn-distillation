@@ -7,7 +7,7 @@
 
 **Yuliang Xiao, Kian Anvari Hamedani, Zach Vavasour, Simon J. Graham, and Mark Chiew**
 
-CMRx4DFlow 2026 · MICCAI workshop
+*MICCAI CMRx4DFlow Workshop 2026*
 
 [Overview](#method-overview) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
 
