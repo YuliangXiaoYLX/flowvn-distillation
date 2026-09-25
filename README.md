@@ -2,8 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10.20-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.12.0-EE4C2C?logo=pytorch&logoColor=white)](pyproject.toml)
-[![Code license](https://img.shields.io/badge/Code%20License-MIT-2EA44F)](LICENSE-CODE.txt)
-[![Data license](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-2EA44F)](LICENSE-DATA.md)
+[![Code license](https://img.shields.io/badge/Code%20License-MIT-2EA44F)](LICENSE)
 ![Paper](https://img.shields.io/badge/Paper-coming%20soon-lightgrey)
 
 **Yuliang Xiao, Kian Anvari Hamedani, Zach Vavasour, Simon J. Graham, and Mark Chiew**
