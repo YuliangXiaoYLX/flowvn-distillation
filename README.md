@@ -134,12 +134,15 @@ tests/                          Synthetic behavior and command checks
 ## Citation
 
 ```bibtex
-@inproceedings{xiao2026stagealigned,
-  title = {Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction},
-  author = {Xiao, Yuliang and Anvari Hamedani, Kian and Vavasour, Zach and Graham, Simon J. and Chiew, Mark},
-  booktitle = {MICCAI CMRx4DFlow 2026 Workshop},
-  year = {2026},
-  url = {https://openreview.net/forum?id=ZmT3bhaD1w}
+@inproceedings{XiaYul_StageAligned_MICCAISAT2026,
+    author = {Xiao, Yuliang AND Anvari Hamedani, Kian AND Vavasour, Zach AND Graham, Simon J. AND Chiew, Mark},
+    title = {Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction},
+    booktitle = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026 Workshops and Challenges},
+    year = {2026},
+    publisher = {Springer Nature Switzerland},
+    volume = {LNCS 17267},
+    month = {pending},
+    page = {pending}
 }
 ```
 
