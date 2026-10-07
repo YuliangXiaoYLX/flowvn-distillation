@@ -9,8 +9,6 @@
 
 *MICCAI 2026 · CMRxRecon 2026 (4D Flow MRI Reconstruction Challenge)*
 
-[MICCAI paper page](https://papers.miccai.org/miccai-2026-sat/CMRxRecon2026_010.html) · [Supplementary material](https://papers.miccai.org/miccai-2026-sat/supp/CMRxRecon2026_010_supp.pdf) · [OpenReview](https://openreview.net/forum?id=ZmT3bhaD1w)
-
 [Overview](#method-overview) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
 
 This code trains an eight-stage FlowVN student from a frozen sixteen-stage
@@ -31,8 +29,7 @@ use measured k-space and coil sensitivities for data consistency. The four
 training recipes below separate teacher initialization from the contribution
 of each distillation loss.
 
-The paper and supplementary material are available through the MICCAI links
-above. This repository contains code, citation metadata, and the method overview;
+This repository contains code, citation metadata, and the method overview;
 challenge data and trained weights are not included.
 
 ## Installation
