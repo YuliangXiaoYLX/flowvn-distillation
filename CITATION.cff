@@ -28,6 +28,9 @@ preferred-citation:
       given-names: Simon J.
     - family-names: Chiew
       given-names: Mark
-  collection-title: "CMRx4DFlow 2026 Workshop"
+  collection-title: "Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026 Workshops and Challenges"
+  publisher:
+    name: "Springer Nature Switzerland"
+  volume: "LNCS 17267"
   year: 2026
-  url: "https://openreview.net/forum?id=ZmT3bhaD1w"
+  url: "https://papers.miccai.org/miccai-2026-sat/CMRxRecon2026_010.html"

@@ -7,7 +7,9 @@
 
 **Yuliang Xiao, Kian Anvari Hamedani, Zach Vavasour, Simon J. Graham, and Mark Chiew**
 
-*MICCAI CMRx4DFlow Workshop 2026*
+*MICCAI 2026 · CMRxRecon 2026 (4D Flow MRI Reconstruction Challenge)*
+
+[MICCAI paper page](https://papers.miccai.org/miccai-2026-sat/CMRxRecon2026_010.html) · [Supplementary material](https://papers.miccai.org/miccai-2026-sat/supp/CMRxRecon2026_010_supp.pdf) · [OpenReview](https://openreview.net/forum?id=ZmT3bhaD1w)
 
 [Overview](#method-overview) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
 
@@ -29,8 +31,9 @@ use measured k-space and coil sensitivities for data consistency. The four
 training recipes below separate teacher initialization from the contribution
 of each distillation loss.
 
-This repository contains code, citation metadata, and the method overview.
-The accepted manuscript, challenge data, and trained weights are not included.
+The paper and supplementary material are available through the MICCAI links
+above. This repository contains code, citation metadata, and the method overview;
+challenge data and trained weights are not included.
 
 ## Installation
 
@@ -141,13 +144,13 @@ tests/                          Synthetic behavior and command checks
     year = {2026},
     publisher = {Springer Nature Switzerland},
     volume = {LNCS 17267},
-    month = {pending},
-    page = {pending}
+    url = {https://papers.miccai.org/miccai-2026-sat/CMRxRecon2026_010.html}
 }
 ```
 
-Proceedings metadata will be added when available. Machine-readable citation:
-[CITATION.cff](CITATION.cff).
+The citation follows the [MICCAI record](https://papers.miccai.org/miccai-2026-sat/CMRxRecon2026_010.html).
+The DOI, publication month, and page range are not yet listed there and are
+omitted above. Machine-readable citation: [CITATION.cff](CITATION.cff).
 
 ## Acknowledgments and licenses
 
