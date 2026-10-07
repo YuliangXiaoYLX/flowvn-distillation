@@ -1,15 +1,19 @@
-# Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction
+<div align="center">
 
-[![Paper](https://img.shields.io/badge/PDF-Paper-magenta?logo=googledocs&logoColor=white)](https://papers.miccai.org/miccai-2026-sat/paper/CMRxRecon2026_010.pdf)
-[![Python](https://img.shields.io/badge/Python-3.10.20-3776AB?logo=python&logoColor=white)](pyproject.toml)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.12.0-EE4C2C?logo=pytorch&logoColor=white)](pyproject.toml)
-[![Code license](https://img.shields.io/badge/Code%20License-MIT-2EA44F)](LICENSE)
+# Stage-Aligned Knowledge Distillation for Fast and Memory-Efficient 4D Flow MRI Reconstruction
 
 **Yuliang Xiao, Kian Anvari Hamedani, Zach Vavasour, Simon J. Graham, and Mark Chiew**
 
 *MICCAI 2026 · CMRxRecon 2026 (4D Flow MRI Reconstruction Challenge)*
 
+[![Paper](https://img.shields.io/badge/PDF-Paper-0969DA?logo=googledocs&logoColor=white)](https://papers.miccai.org/miccai-2026-sat/paper/CMRxRecon2026_010.pdf)
+[![Python](https://img.shields.io/badge/Python-3.10.20-3776AB?logo=python&logoColor=white)](pyproject.toml)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.12.0-EE4C2C?logo=pytorch&logoColor=white)](pyproject.toml)
+[![Code license](https://img.shields.io/badge/Code%20License-MIT-2EA44F)](LICENSE)
+
 [Overview](#method-overview) · [Reproduction](docs/reproduction.md) · [Data](docs/data.md) · [Checkpoints](docs/checkpoints.md) · [Citation](#citation)
+
+</div>
 
 This code trains an eight-stage FlowVN student from a frozen sixteen-stage
 teacher. Student stages align with pairs of teacher stages, using supervision
